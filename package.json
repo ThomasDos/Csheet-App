@@ -1,0 +1,26 @@
+{
+  "name": "project-codehouse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "set NODE_ENV=development&& env-cmd -f ./src/configs/test.env jest --watch --runInBand",
+    "start": "set NODE_ENV=production&& node src/index.js",
+    "dev": "set NODE_ENV=development&& env-cmd -f ./src/configs/dev.env nodemon src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "env-cmd": "^10.1.0",
+    "express": "^4.17.1",
+    "jest": "^27.0.6",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.1.0",
+    "mongoose": "^5.13.7",
+    "supertest": "^6.1.5",
+    "validator": "^13.6.0"
+  }
+}
